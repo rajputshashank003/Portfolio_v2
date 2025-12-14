@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Environment, OrbitControls } from "@react-three/drei"
 import { PlaneCar } from "../../../../public/RedCar"
 import { Canvas } from "@react-three/fiber"

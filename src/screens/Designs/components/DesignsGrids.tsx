@@ -1,5 +1,4 @@
 import { map, size } from "lodash"
-import { XLogo } from "../../../components/Svgs";
 import { useNavigate } from "react-router-dom";
 import { design } from "../../../components/projectData";
 
