@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@layer utilities {
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+     /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+    }
+}
+
+:root {
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+@font-face {
+    font-family: 'f1';
+    src: url('/Fonts/GuthenBloots.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'f2';
+    src: url('/Fonts/ModernEra-ExtraBold.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'f3';
+    src: url('/Fonts/ModernEra-Medium.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'f4';
+    src: url('/Fonts/ModernEra-Regular.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'f5';
+    src: url('/Fonts/Recoleta-Black.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'f6';
+    src: url('/Fonts/Recoleta-Bold.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'oddo';
+    src: url('/Fonts/oddo.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'shd';
+    src: url('/Fonts/Shd.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'bearhunter';
+    src: url('/Fonts/BearHunterRegular.woff') format('woff');
+}
+@font-face {
+    font-family: 'truestory';
+    src: url('/Fonts/TrueStoryRegular.woff') format('woff');
+}
+@font-face {
+    font-family: 'ceria';
+    src: url('/Fonts/CeriaRegular.woff') format('woff');
+}
+
+@theme {
+  --font-f1: "f1", system-ui, sans-serif;
+  --font-f2: "f2", system-ui, sans-serif;
+  --font-f3: "f3", system-ui, sans-serif;
+  --font-f4: "f4", system-ui, sans-serif;
+  --font-f5: "f5", system-ui, serif;
+  --font-f6: "f6", system-ui, serif;
+
+  --font-oddo: "oddo", system-ui, sans-serif;
+  --font-shd: "shd", system-ui, sans-serif;
+  --font-bearhunter: "bearhunter", system-ui, sans-serif;
+  --font-truestory: "truestory", system-ui, sans-serif;
+  --font-ceria: "ceria", system-ui, sans-serif;
+}
