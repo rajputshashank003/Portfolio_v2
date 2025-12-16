@@ -6,6 +6,7 @@ import ProfileLinks from "./Components/ProfileLinks";
 import Projects from "./Components/Projects";
 import PortfolioContext from "./context"
 import usePortfolio from "./usePortfolio"
+import TechStack from "./Components/TechStack";
 // import RedCarModel from "./Components/RedCarModel";
 
 const PortfolioContent = () => {
@@ -18,6 +19,8 @@ const PortfolioContent = () => {
             <ProfileLinks />
             <LineGap />
             <About />
+            <LineGap />
+            <TechStack />
             <LineGap />
             <Experience />
             <LineGap />

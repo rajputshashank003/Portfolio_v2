@@ -16,12 +16,20 @@ const Experience = () => {
             />
             <ExperienceBox
                 company={'Freelance'}
-                companyIcon={<div className='bg-zinc-200 h-[12px] w-[12px] rounded-full' /> }
+                companyIcon={
+                    <div className='h-[24px] w-[24px] flex justify-center items-center'>
+                        <div className='bg-zinc-200 h-[12px] w-[12px] rounded-full' />
+                    </div>
+                }
                 roles={freelance_roles}
             />
             <ExperienceBox
                 company={'Education'}
-                companyIcon={<div className='bg-zinc-200 h-[12px] w-[12px] rounded-full' />}
+                companyIcon={
+                    <div className='h-[24px] w-[24px] flex justify-center items-center'>
+                        <div className='bg-zinc-200 h-[12px] w-[12px] rounded-full' />
+                    </div>
+                }
                 roles={education_roles}
             />
         </>

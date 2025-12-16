@@ -1,34 +1,60 @@
+export const techStack = [
+    "Java",
+    "JavaScript",
+    "TypeScript",
+    "Go (Golang)",
+    "SQL",
+    "C",
+    "C++",
+    "HTML",
+    "CSS",
+    "Node.js",
+    "Express.js",
+    "React.js",
+    "Mongoose",
+    "Prisma",
+    "Three.js",
+    "GSAP",
+    "Framer Motion",
+    "Locomotive Scroll",
+    "Material UI",
+    "Tailwind CSS",
+    "Leaflet.js",
+    "Pintura",
+    "MongoDB",
+    "PostgreSQL",
+    "MySQL",
+    "Git",
+    "GitHub",
+    "WebSocket",
+    "WebRTC",
+    "Object-Oriented Programming (OOP)"
+];
+
 export const wizcommerce_roles = [{
     title: 'Software Engineer',
-    duration: 'June 2023 - infinity',
+    from: 'June 2023',
+    to: 'I',
     type: 'Internship',
-    about_internship: [
-        'Developed and maintained features for WizCommerce, an e-commerce SaaS platform, using React for frontend and Golang for backend services.',
-        'Collaborated with cross-functional teams to design scalable solutions, ensuring seamless integration of new features with existing systems.',
-        'Implemented RESTful APIs and optimized database queries to enhance application performance and user experience.',
+    projectLink: 'https://studio.wizcommerce.com',
+    description: [
+        'Built and scaled responsive frontend modules for WizStudio and WizCommerce using React.js and TypeScript, contributing to Image Editor, Product, Project, Review, and Wishlist experiences.',
+        'Developed advanced image editing tools including a custom Pintura-based editor from Figma designs, an image expansion editor with dual canvases, and a multi-image canvas editor supporting resize, crop, rotate, move, layering, and responsive rendering.',
+        'Enhanced the WizCommerce platform by implementing the Promoted Wishlist Rail on landing and wishlist pages, improving product visibility and user engagement.',
     ],
-    techStack: ['React', 'TypeScript', 'Golang', 'PostgreSQL', 'Docker', 'Kubernetes'],
-}, {
-        title: 'Software Engineer',
-        duration: 'June 2023 - infinity',
-        type: 'Internship',
-        about_internship: [
-            'Developed and maintained features for WizCommerce, an e-commerce SaaS platform, using React for frontend and Golang for backend services.',
-            'Collaborated with cross-functional teams to design scalable solutions, ensuring seamless integration of new features with existing systems.',
-            'Implemented RESTful APIs and optimized database queries to enhance application performance and user experience.',
-        ],
-        techStack: ['React', 'TypeScript', 'Golang', 'PostgreSQL', 'Docker', 'Kubernetes'],
-    }
+    techStack: ['React', 'TypeScript', 'Material UI', 'Pintura', 'Git', 'GitHub'],
+},
 ];
 
 export const freelance_roles = [{
-    title: 'FullStack Developer',
-    duration: 'July 2025 - September 2025',
+    title: 'Bharapups',
+    from: 'July 2025',
+    to: 'September 2025',
     type: 'Part-time',
-    about_internship: [
-        'Developed and maintained features for WizCommerce, an e-commerce SaaS platform, using React for frontend and Golang for backend services.',
-        'Collaborated with cross-functional teams to design scalable solutions, ensuring seamless integration of new features with existing systems.',
-        'Implemented RESTful APIs and optimized database queries to enhance application performance and user experience.',
+    projectLink: 'https://bharatpups.shop',
+    description: [
+        'Built BharatPups, a freelance project – a dog - selling platform with clean UI, advanced search, and explore features for seamless browsing.',
+        'Integrated Google authentication, direct WhatsApp messaging, and call support to streamline buyer–seller communication with responsive design to enhance user engagement and accessibility.'
     ],
     techStack: ['React', 'TypeScript', 'Golang', 'PostgreSQL', 'Docker', 'Kubernetes'],
     icon: (
@@ -40,12 +66,11 @@ export const freelance_roles = [{
 
 export const education_roles = [{
     title: 'Chitkara University - B.E Computer Science',
-    duration: 'Aug 2022 - June 2026',
-    // type: 'Part-time',
-    about_internship: [
-        'Developed and maintained features for WizCommerce, an e-commerce SaaS platform, using React for frontend and Golang for backend services.',
-        'Collaborated with cross-functional teams to design scalable solutions, ensuring seamless integration of new features with existing systems.',
-        'Implemented RESTful APIs and optimized database queries to enhance application performance and user experience.',
+    from: 'Aug 2022', 
+    to: 'June 2026',
+    description: [
+        'Gained strong foundations in Computer Science concepts and learned multiple programming languages including C, C++, Java, and JavaScript, along with problem - solving using Data Structures & Algorithms.',
+        'Built practical experience through projects, labs, and self - learning, developing skills in full - stack web development(MERN), debugging, teamwork, and real - world application design.'
     ],
     techStack: ['React', 'TypeScript', 'Golang', 'PostgreSQL', 'Docker', 'Kubernetes'],
     icon: (

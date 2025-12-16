@@ -16,6 +16,9 @@ const Projects = () => {
                         project={opt.title}
                         logo={<img src={startsWith(opt?.img, 'https') ? opt.img : `/componentImages/${opt.img}`} className='h-[48px] w-[48px] rounded-[12px] ' />}
                         duration={opt.duration}
+                        description={opt.description}
+                        techStack={opt.techStack}
+                        projectLink={opt.link}
                         isLastBox={size(fullstack) === i + 1}
                     />
                 ))}

@@ -14,8 +14,7 @@ const BlockchainProjectsContent = () => {
             </BorderWrapper>
             <BorderWrapper boxClass="px-[12px] py-[3%] ">
                 <div className="text-zinc-400 text-[18px] leading-5">
-                    A collection of reusable components. <br />
-                    Trusted registry for shadcn/ui.
+                    A collection of blockchain projects.
                 </div>
             </BorderWrapper>
             <BorderWrapper boxClass="h-[14px]"></BorderWrapper>
