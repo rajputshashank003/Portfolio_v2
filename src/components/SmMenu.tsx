@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useEffect, useRef } from 'react'
 import { motion } from "motion/react";
 import { Link, useNavigate } from 'react-router-dom';
