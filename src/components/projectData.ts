@@ -4,50 +4,47 @@ export const fullstack = [
         title: "Bharatpups",
         link: "https://Bharatpups.vercel.app",
         description: [
-            "Developed Bharatpups, an online dog selling platform with dedicated admin and user dashboards.",
-            "Implemented user-side features for browsing listings, viewing details, and managing inquiries.",
-            "Built an admin dashboard to manage dog listings, users, and platform content efficiently.",
-            "Integrated secure authentication and role-based access control for admins and users.",
-            "Designed a responsive and user-friendly interface to ensure smooth navigation across devices."
-        ]
-        , small_description: "Bharatpups is a dog selling website where i developed admin and user dashboard.",
+            "Developed Bharatpups, a full-stack online dog-selling platform with separate admin and user dashboards.",
+            "Implemented event-driven webhooks and optimized APIs to reduce latency and ensure real-time data consistency.",
+            "Designed a responsive, animation-rich UI with smooth interactions across devices, focusing on UX and performance.",
+            "Integrated Google authentication, role-based access control, and containerized the backend using Docker for deployment on Render."
+        ], 
+        small_description: "Bharatpups is a dog selling website where i developed admin and user dashboard.",
         duration: "Jul 2025 - Sept 2025",
         roles: 'FullStack developer',
-        techStack: ['React', 'TypeScript', 'Golang', 'PostgreSQL', 'Docker', 'Kubernetes'],
+        techStack: ['React', 'TypeScript', 'Javascript', 'MongoDB', 'Docker', 'framer-motion', 'GSAP'],
     },
     {
         img: "https://github.com/rajputshashank003/Chess.v.0.2.1/blob/main/image.png?raw=true",
         title: "ChessV",
         link: "https://chessv.netlify.app",
         description: [
-            "Developed ChessV, a real-time online multiplayer chess platform using React and Node.js.",
-            "Implemented real-time gameplay, move synchronization, and live player interactions using Socket.io.",
-            "Integrated chess.js to handle game rules, move validation, and board state management.",
-            "Built WebRTC-based voice calling to enable real-time communication between players during matches.",
-            "Added features like custom game rooms, live spectators, and in-game chat for an engaging user experience.",
-            "Designed a responsive and modern UI ensuring smooth gameplay across devices."
+            "Developed ChessV, a real-time multiplayer chess platform using React, Node.js, Socket.io, and Chess.js.",
+            "Engineered low-latency real-time gameplay with move synchronization, spectators, in-game chat, and custom match rooms.",
+            "Integrated WebRTC-based audio/video calling for live player communication and enhanced multiplayer experience.",
+            "Implemented Solana-based betting matches, secure game state handling, and a fully responsive, animation-smooth UI across devices.",
+            "Integrated generative AI to provide real-time move suggestions, strategic hints, and gameplay guidance during matches."
         ],
         small_description: "ChessV is an online chess game contains features like real-time gameplay , calling etc.",
         duration: "June 2025 - Aug 2025",
         roles: 'FullStack developer',
-        techStack: ['React', 'TypeScript', 'Golang', 'PostgreSQL', 'Docker', 'Kubernetes'],
-
+        techStack: ['React', 'Blockchain', 'Javascript', 'WebRTC', 'WebSocket', 'Tailwind', 'GenAi', 'Three.js'],
     },
     {
         img: "/Foodybro.png",
         title: "FoodyBro",
         link: "https://foodybro.vercel.app",
         description: [
-            "Developed a comprehensive food ordering web application using the MERN stack (MongoDB, Express.js, React, Node.js).",
-            "Implemented features for browsing food items, adding products to the cart, and managing orders through a smooth checkout flow.",
-            "Built secure user authentication and profile management for personalized user experiences.",
-            "Integrated real-time order updates and efficient state management for seamless interactions.",
-            "Designed a responsive and intuitive UI to ensure usability across different devices."
-        ]
-        , small_description: "A comprehensive food ordering application.",
+            "Developed FoodyBro, a full-stack food ordering platform using the MERN stack (MongoDB, Express.js, React, Node.js).",
+            "Implemented core features including food browsing, cart management, order tracking, and a seamless checkout flow.",
+            "Integrated generative AI to deliver personalized food recommendations based on user preferences and behavior.",
+            "Built secure authentication, personalized email notifications, and Solana Pay integration for secure bill payments.",
+            "Designed a highly interactive and responsive UI using Three.js, GSAP, and Framer Motion for smooth, animation-rich user experiences across devices."
+        ],
+        small_description: "A comprehensive food ordering application.",
         duration: "July 2024 - Dec 2024",
         roles: 'FullStack developer',
-        techStack: ['React', 'TypeScript', 'Golang', 'PostgreSQL', 'Docker', 'Kubernetes'],
+        techStack: ['React', 'TypeScript', 'MongoDB', 'Docker', 'Three.js', 'framer-motion', 'GSAP'],
 
     },
     {
@@ -64,7 +61,7 @@ export const fullstack = [
         , small_description: "RATSI - AI Turor can teach people DSA.",
         duration: "Jan 2025 - Mar 2025",
         roles: 'FullStack developer',
-        techStack: ['React', 'TypeScript', 'Golang', 'PostgreSQL', 'Docker', 'Kubernetes'],
+        techStack: ['React', 'TypeScript', 'PostgreSQL', 'GenAi', 'Tailwind'],
 
     },
     {
@@ -81,8 +78,7 @@ export const fullstack = [
         , small_description: "Airbnb Clone project, a web application built to replicate key features of Airbnb.",
         duration: "Dec 2023 - Jan 2024",
         roles: 'FullStack developer',
-        techStack: ['React', 'TypeScript', 'Golang', 'PostgreSQL', 'Docker', 'Kubernetes'],
-
+        techStack: ['EJS', 'Javascript', 'MongoDB', 'Bootstrap'],
     },
 ];
 
