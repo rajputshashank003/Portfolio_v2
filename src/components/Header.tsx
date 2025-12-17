@@ -2,14 +2,33 @@ import { includes, map } from "lodash"
 import { useLocation, useNavigate } from 'react-router-dom';
 import { ScreensOptions } from "./utils.tsx";
 import BorderWrapper from "./BorderWrapper";
+import SmMenu from "./SmMenu.tsx";
+import { useRef, useState } from "react";
+import MenuIcon from "./MenuIcon.tsx";
 
 const Header = () => {
     const location = useLocation();
     const navigate = useNavigate();
+    const [menuOpen, setMenuOpen] = useState(false);
+    const triggerClose = useRef<any>(null);
+
+    const renderSmallDisplayMenu = () => {
+        return (
+            <div className="w-full">
+                <div className="w-full flex relative justify-end z-[9999]">
+                    <div className="w-[30px] h-[30px] rounded-full p-[4px] flex justify-center items-center scale-[0.9]">
+                        <MenuIcon triggerClose={triggerClose} onClick={() => setMenuOpen(prev => !prev)} />
+                    </div>
+                </div>
+                <SmMenu onClose={() => triggerClose.current?.()} menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+            </div>
+        )
+    };
 
     return (
         <BorderWrapper boxClass={'flex text-[18px] justify-end gap-[12px] px-[12px] py-[8px]'}>
-            {
+            {renderSmallDisplayMenu()}
+            {/* {
                 map(ScreensOptions, (opt: string) => (
                     <div
                         style={{
@@ -24,7 +43,7 @@ const Header = () => {
                         {opt}
                     </div>
                 ))
-            }
+            } */}
         </BorderWrapper>
     )
 }

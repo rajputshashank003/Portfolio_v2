@@ -34,6 +34,7 @@ export const components = [
                 max={22}
                 buttonColor="black"
                 iconColor="white"
+                textColor="black"
             />
         ),
         code: ((s) => { const t = s.replace(/^\n+|\n+$/g, ""); const i = Math.min(...t.split("\n").filter(l => l.trim()).map(l => l.match(/^(\s*)/)![1].length)); return t.split("\n").map(l => l.slice(i)).join("\n"); })(`
@@ -42,6 +43,7 @@ export const components = [
                 max={22}
                 buttonColor="black"
                 iconColor="white"
+                textColor="black"
             />
         `),
     },

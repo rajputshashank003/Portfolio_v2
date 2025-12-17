@@ -1,5 +1,5 @@
 import BorderWrapper from "../../../components/BorderWrapper";
-import RedCarModel from "./RedCarModel";
+// import RedCarModel from "./RedCarModel";
 
 const Profile = () => {
 
@@ -19,7 +19,7 @@ const Profile = () => {
                             text-3xl &nbsp; text-zinc-950 &nbsp; font-f2
                         </span>
                         <div className="absolute -bottom-[26px] right-[12px] h-[80px] w-[250px] ">
-                            <RedCarModel />
+                            {/* <RedCarModel /> */}
                         </div>
                     </div>
                     <div className="border-t-1 text-zinc-950 font-f2 font-[600] px-[12px] text-[32px] border-neutral-200 min-w-full">

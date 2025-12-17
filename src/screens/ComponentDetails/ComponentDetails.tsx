@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import BorderWrapper from "../../components/BorderWrapper";
 import LineGap from "../../components/LineGap";
 import { find } from "lodash";
@@ -8,12 +8,13 @@ import CodeBlock from "./components/CodeBlock.tsx";
 const ComponentDetails = () => {
     const params = useParams();
     const component = find(components, c => c.label === params.counter);
+    const navigate = useNavigate();
 
     return (
         <div className="relative  min-h-[100vh] z-[1]">
             <LineGap />
             <BorderWrapper boxClass="text-[14px] text-zinc-500 items-center px-[12px] h-fit leading-11 font-[500] flex gap-[12px] " >
-                <div>
+                <div className="cursor-pointer" onClick={() => navigate(-1)}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-arrow-left" aria-hidden="true"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg>
                 </div>
                 <div>
