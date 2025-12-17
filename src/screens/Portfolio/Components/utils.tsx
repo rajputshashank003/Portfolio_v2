@@ -33,7 +33,7 @@ export const techStack = [
 
 export const wizcommerce_roles = [{
     title: 'Software Engineer',
-    from: 'June 2023',
+    from: 'April 2025',
     to: 'I',
     type: 'Internship',
     projectLink: 'https://studio.wizcommerce.com',
