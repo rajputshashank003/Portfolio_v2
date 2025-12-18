@@ -22,10 +22,10 @@ const Profile = () => {
                             {/* <RedCarModel /> */}
                         </div>
                     </div>
-                    <div className="border-t-1 text-zinc-950 font-f2 font-[600] px-[12px] text-[32px] border-neutral-200 min-w-full">
+                    <div className="border-t-1 max-md:leading-10 text-zinc-950 font-f2 font-[600] px-[12px] text-[32px] border-neutral-200 min-w-full">
                         Shashank Rajput
                     </div>
-                    <div className="border-t-1 border-neutral-200 w-full px-[12px] text-[18px] py-[4px] text-zinc-500">
+                    <div className="border-t-1 whitespace-nowrap border-neutral-200 w-full px-[12px] text-[18px] py-[4px] text-zinc-500">
                         Software Engineer
                     </div>
                 </div>
