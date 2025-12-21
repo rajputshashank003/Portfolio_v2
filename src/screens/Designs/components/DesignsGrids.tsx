@@ -14,7 +14,7 @@ const DesignGrids = () => {
             }}
             style={{
                 ...(i % 2 !== 0) ? { borderRight: '0px' } : { borderLeft: '0px' },
-                ...(i <= 1 && { borderTop: '0px' }),
+                ...((window.innerWidth < 600 ? i < 1 : i <= 1) && { borderTop: '0px' }),
                 ...(i > size(design) && { borderBottom: '0px' }),
             }}
             key={i}

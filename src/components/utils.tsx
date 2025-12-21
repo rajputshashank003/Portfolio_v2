@@ -26,7 +26,7 @@ export const components = [
     {
         title: 'Animated Motion Counter',
         label: "animated-motion-counter",
-        about: 'Create a "Xin chào" and "Hello" writing effect inspired by Apple using Motion for React.',
+        about: 'Created a animated counter button.',
         installation: 'npm install animated-motion-counter',
         component: (
             <Counter

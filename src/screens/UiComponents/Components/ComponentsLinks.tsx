@@ -1,5 +1,4 @@
 import { map, size } from "lodash"
-import { XLogo } from "../../../components/Svgs";
 import { useNavigate } from "react-router-dom";
 import { web_components } from "../../../components/projectData";
 
@@ -7,8 +6,8 @@ const ComponentsLinks = () => {
     const navigate = useNavigate();
 
     const npm_components = [
-        { label: 'animated-motion-counter', title: "Animated Motion Counter", handle: "@iamncdai", icon: <XLogo /> },
-        { label: 'feedback-animated-box', title: "Feedback Animated Box", handle: "ncdai", icon: <img src='/Logo/Github_logo.webp' className="h-[48px] w-[48px] bg-white" /> },
+        { label: 'animated-motion-counter', title: "Animated Motion Counter", handle: "@iamncdai", img: '/animated-motion-counter.png' },
+        { label: 'feedback-animated-box', title: "Feedback Animated Box", handle: "ncdai", img: '/feedback-animated-box.png' },
     ];
 
     const render_grid_box = (s: any, i: any, is_npm: boolean) => (
@@ -20,16 +19,16 @@ const ComponentsLinks = () => {
             }}
             style={{
                 ...(i % 2 !== 0) ? { borderRight: '0px' } : { borderLeft: '0px' },
-                ...(i <= 1 && { borderTop: '0px' }),
+                ...(( window.innerWidth < 600 ? i < 1 : i <= 1) && { borderTop: '0px' }),
                 ...(i > size(npm_components) + size(web_components) && { borderBottom: '0px' }),
             }}
             key={i}
             className="flex items-center relative border-1 border-neutral-200 justify-between px-3 py-4 hover:bg-neutral-50 transition-colors"
         >
             <div className="flex items-center gap-[12px]">
-                {is_npm 
+                {is_npm && s?.icon 
                     ? <div className="w-12 h-12 flex items-center justify-center bg-zinc-950 rounded-[12px] overflow-hidden ">
-                        {s.icon}
+                        {s.icon} 
                     </div>
                     : <img src={`/componentImages/${s.img}`} className="w-12 h-12 rounded-[12px] object-cover" />
                 }

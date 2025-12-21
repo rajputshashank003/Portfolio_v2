@@ -14,8 +14,8 @@ const BlockchainProjectsLinks = () => {
             }}
             style={{
                 ...(i % 2 !== 0) ? { borderRight: '0px' } : { borderLeft: '0px' },
-                ...(i <= 1 && { borderTop: '0px' }),
-                ...(i >= size(web3) - 2 && { borderBottom: '0px' }),
+                ...((window.innerWidth < 600 ? i < 1 : i <= 1) && { borderTop: '0px' }),
+                ...(i >= (window.innerWidth < 600 ? size(web3) - 1 : size(web3) - 2 ) && { borderBottom: '0px' }),
             }}
             key={i}
             className="flex items-center relative border-1 border-neutral-200 justify-between px-3 py-4 hover:bg-neutral-50 transition-colors"
