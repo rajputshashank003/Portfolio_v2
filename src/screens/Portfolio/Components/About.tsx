@@ -1,6 +1,10 @@
+import { useNavigate } from 'react-router-dom'
 import BorderWrapper from '../../../components/BorderWrapper'
+import { HoverChip } from '../../../components/HoverChip'
 
 const About = () => {
+    const navigate = useNavigate();
+    
     return (
         <>
             <BorderWrapper boxClass="text-[36px] px-[12px] h-fit leading-10 font-[500]">
@@ -35,7 +39,7 @@ const About = () => {
                             Solved over{" "}
                             <span className="font-semibold">600+ Data Structures & Algorithms problems</span>{" "}
                             on platform {" "}
-                            <span className="font-semibold">LeetCode</span>, achieving a{" "}
+                            <HoverChip label='leetcode.com/rajputshashank'><span onClick={() => navigate('https://leetcode.com/rajputshashank')} className="font-semibold">LeetCode</span></HoverChip>, achieving a{" "}
                             <span className="font-semibold">1550+ contest rating</span> and
                             continuously improving problem-solving and algorithmic thinking.
                         </li>

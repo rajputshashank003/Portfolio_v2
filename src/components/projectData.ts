@@ -1,5 +1,22 @@
 export const fullstack = [
     {
+        img: "https://res.cloudinary.com/db8sjqkbg/image/upload/v1766167743/AIKSAVA_nlrlvm.png",
+        title: "Aiksava",
+        link: "https://Aiksava.vercel.app",
+        description: [
+            "Payment integration using Golang(Gin), payment sessions, redirects, and secure webhook handling with consistent database state updates.",
+            "Shiprocket logistics integration covering delivery serviceability checks, pickup scheduling, and shipment tracking.",
+            "Microservices based backend architecture with Node.js, handling core business logic and a separate Golang service dedicated to payments.",
+            "Asynchronous webhook processing with signature verification to reliably sync payment, delivery and order statuses in DB.",
+            "Integrated Google authentication, role-based access control and dockerized backend services enabling isolated deployments.",
+            "Designed a responsive, animation-rich UI with smooth interactions across devices, focusing on UX and performance.",
+        ],
+        small_description: "Bharatpups is a dog selling website where i developed admin and user dashboard.",
+        duration: "Sep 2025 - Infinity",
+        roles: 'FullStack developer',
+        techStack: ['React', 'Go (Golang)', 'Webhook', 'TypeScript', 'Javascript', 'MongoDB', 'Docker', 'framer-motion', 'GSAP'],
+    },
+    {
         img: "/bharatpups.png",
         title: "Bharatpups",
         link: "https://Bharatpups.vercel.app",
@@ -8,7 +25,7 @@ export const fullstack = [
             "Implemented event-driven webhooks and optimized APIs to reduce latency and ensure real-time data consistency.",
             "Designed a responsive, animation-rich UI with smooth interactions across devices, focusing on UX and performance.",
             "Integrated Google authentication, role-based access control, and containerized the backend using Docker for deployment on Render."
-        ], 
+        ],
         small_description: "Bharatpups is a dog selling website where i developed admin and user dashboard.",
         duration: "Jul 2025 - Sept 2025",
         roles: 'FullStack developer',
