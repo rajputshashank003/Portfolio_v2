@@ -2,7 +2,7 @@ export const fullstack = [
     {
         img: "https://res.cloudinary.com/db8sjqkbg/image/upload/v1766167743/AIKSAVA_nlrlvm.png",
         title: "Aiksava",
-        link: "https://Aiksava.vercel.app",
+        // link: "https://Aiksava.vercel.app",
         description: [
             "Payment integration using Golang(Gin), payment sessions, redirects, and secure webhook handling with consistent database state updates.",
             "Shiprocket logistics integration covering delivery serviceability checks, pickup scheduling, and shipment tracking.",
