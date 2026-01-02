@@ -2,6 +2,7 @@ import { head, map, size } from "lodash"
 import BorderWrapper from "../../../components/BorderWrapper"
 import { XLogo } from "../../../components/Svgs";
 import { web_components } from "../../../components/projectData";
+import { HoverChip } from "../../../components/HoverChip";
 
 const ProfileLinks = () => {
     console.log(head(web_components));
@@ -23,8 +24,11 @@ const ProfileLinks = () => {
                         onClick={() => window.open(`${ size(socials) === i + 1 ? '' : 'https://'}${s.link}`, '_blank')}
                         style={{
                             ...(i % 2 !== 0) ? { borderRight: '0px' } : { borderLeft: '0px' },
-                            ...(i <= 1 && { borderTop: '0px' }),
-                            ...(i > 3 && { borderBottom: '0px' }),
+                            ...(i <= 1 && window.innerWidth > 600 && { borderTop: '0px' }),
+                            ...(i > 3 && window.innerWidth > 600 && { borderBottom: '0px' }),
+                            ...(i === 0 && { borderTop: '0px' }),
+                            ...(i === 1 && window.innerWidth > 600 && { borderTop: '0px' }),
+                            ...(i === size(socials) - 1 && window.innerWidth < 600 && { borderBottom: '0px' }),
                         }}
                         key={i}
                         className="flex items-center relative border-1 border-neutral-200 justify-between px-3 py-4 hover:bg-neutral-50 transition-colors"
@@ -38,16 +42,18 @@ const ProfileLinks = () => {
                                 <div className="text-[14px] text-neutral-500">{s.handle}</div>
                             </div>
                         </div>
+                        <HoverChip label="Component link">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
                             viewBox="0 0 24 24"
                             strokeWidth={2.5}
                             stroke="currentColor"
-                            className="w-[18px] h-[18px] text-neutral-400 -rotate-[45deg]"
+                            className="w-[18px] cursor-pointer h-[18px] text-neutral-400 -rotate-[45deg]"
                         >
                             <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75L21 10.5m0 0l-3.75 3.75M21 10.5H8" />
                         </svg>
+                        </HoverChip>
                         <div className="border-1 border-neutral-200 h-[13.5px] w-[13.5px] absolute -bottom-[13.5px] -left-[13.5px] "></div>
                     </div>
                 ))}
