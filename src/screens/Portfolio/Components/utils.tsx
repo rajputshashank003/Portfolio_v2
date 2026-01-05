@@ -53,10 +53,10 @@ export const freelance_roles = [{
     type: 'Part-time',
     projectLink: 'https://bharatpups.shop',
     description: [
-        'Built BharatPups, a freelance project – a dog - selling platform with clean UI, advanced search, and explore features for seamless browsing.',
-        'Integrated Google authentication, direct WhatsApp messaging, and call support to streamline buyer–seller communication with responsive design to enhance user engagement and accessibility.'
+        'Built BharatPups, a freelance project, a dog-selling platform with clean UI, advanced search, and explore features for seamless browsing, backed by lightweight microservice for faster data fetching.',
+        'Integrated Google authentication, direct WhatsApp messaging, and call support to streamline buyer–seller communication, along with webhook - driven event handling and a responsive design.'
     ],
-    techStack: ['React', 'TypeScript', 'Golang', 'PostgreSQL', 'Docker', 'Kubernetes'],
+    techStack: ['React', 'TypeScript', 'Javascript', 'Node.js', 'MongoDB', 'Docker', 'Webhooks', 'framer-motion'],
     icon: (
         <div className="flex z-[1] mt-[2px] size-6 shrink-0 items-center justify-center rounded-lg bg-zinc-100 text-zinc-500 border border-zinc-300 ring-1 ring-edge ring-offset-1 ring-offset-background" aria-hidden="true">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-drafting-compass size-4 __web-inspector-hide-shortcut__" aria-hidden="true"><path d="m12.99 6.74 1.93 3.44"></path><path d="M19.136 12a10 10 0 0 1-14.271 0"></path><path d="m21 21-2.16-3.84"></path><path d="m3 21 8.02-14.26"></path><circle cx="12" cy="5" r="2"></circle></svg>
