@@ -5,8 +5,6 @@ import { web_components } from "../../../components/projectData";
 import { HoverChip } from "../../../components/HoverChip";
 
 const ProfileLinks = () => {
-    console.log(head(web_components));
-
     const socials = [
         { link: 'x.com/_rajputshashank' , name: "X (formerly Twitter)", handle: "@_rajputshashank", icon: <XLogo /> },
         { link: 'github.com/rajputshashank003' , name: "GitHub", handle: "@rajputshashank003", icon: <img src='/Logo/Github_logo.webp' className="h-[48px] w-[48px] bg-white" /> },
