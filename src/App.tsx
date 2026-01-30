@@ -6,17 +6,19 @@ import { Analytics } from '@vercel/analytics/react';
 
 const App = () => {
     return (
-        <BrowserRouter>
+        <>
             <Analytics />
-            <div className="fixed z-[2] bg-white">
-                <div className="h-[14px] bg-white w-full" />
-                <Header />
-            </div>
-            <div className="top-[58px] relative z-[1] ">
-                <ScreenRoutes />
-                <Footer />
-            </div>
-        </BrowserRouter>
+            <BrowserRouter>
+                <div className="fixed z-[2] bg-white">
+                    <div className="h-[14px] bg-white w-full" />
+                    <Header />
+                </div>
+                <div className="top-[58px] relative z-[1] ">
+                    <ScreenRoutes />
+                    <Footer />
+                </div>
+            </BrowserRouter>
+        </>
     )
 }
 
