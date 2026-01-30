@@ -2,10 +2,12 @@ import { BrowserRouter } from "react-router-dom"
 import ScreenRoutes from "./components/ScreenRoutes"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
+import { Analytics } from '@vercel/analytics/react';
 
 const App = () => {
     return (
         <BrowserRouter>
+            <Analytics />
             <div className="fixed z-[2] bg-white">
                 <div className="h-[14px] bg-white w-full" />
                 <Header />
