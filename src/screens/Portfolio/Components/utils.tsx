@@ -2,6 +2,7 @@ export const techStack = [
     "Java",
     "JavaScript",
     "TypeScript",
+    "Redis",
     "Go (Golang)",
     "SQL",
     "C",

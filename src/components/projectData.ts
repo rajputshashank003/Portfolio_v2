@@ -14,7 +14,7 @@ export const fullstack = [
         small_description: "Bharatpups is a dog selling website where i developed admin and user dashboard.",
         duration: "Sep 2025 - Infinity",
         roles: 'FullStack developer',
-        techStack: ['React', 'Go (Golang)', 'Webhook', 'TypeScript', 'Javascript', 'MongoDB', 'Docker', 'framer-motion', 'GSAP'],
+        techStack: ['React', 'Go (Golang)', 'Webhook', "Redis", 'TypeScript', 'Javascript', 'MongoDB', 'Docker', 'framer-motion', 'GSAP'],
     },
     {
         img: "/bharatpups.png",
