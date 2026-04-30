@@ -32,21 +32,33 @@ export const techStack = [
     "Object-Oriented Programming (OOP)"
 ];
 
-export const wizcommerce_roles = [{
-    title: 'Software Engineer',
-    from: 'April 2025',
-    to: 'I',
-    type: 'Internship',
-    projectLink: 'https://studio.wizcommerce.com',
-    description: [
-        'Built the responsive frontend of WizStudio, contributing to key modules like Image Editors, Product, Project, and Review using React.js, TypeScript, Pintura, WebGL and Material UI.',
-        'Developed advanced WebGL - powered image editors, including a custom Pintura - based editor from Figma designs, an image expansion editor using dual canvases, and a multiple multi - layer canvas editor supporting comprehensive editing and compositing with high - performance, responsive rendering.',
-        'Developed AI- assisted line - drawing annotation tools by integrating AI - based coordinate extraction and rendering SVG layers with fully transformable controls while maintaining low - latency interactions.',
-        'Collaborated with backend and design teams to ship features end - to - end.',
-        'Improved website performance through modular, scalable component architecture and coordinated multi - API data flows, delivering 20 % + smoother interactions and highly responsive user experiences.',
-    ],
-    techStack: ['React', 'TypeScript', 'Material UI', 'Pintura', 'Git', 'GitHub'],
-},
+export const wizcommerce_roles = [
+    {
+        title: 'Software Engineer',
+        from: 'April 2026',
+        to: 'I',
+        projectLink: 'https://studio.wizcommerce.com',
+        description: [
+            'Building the WizStudio from scratch and developed AI-assisted line-drawing annotation tools by integrating AI-based coordinate extraction.',
+            'Engineered a high-throughput bulk image processing system handling 100+ images concurrently, reducing GPU load via batched operations and parallel pipelines, and optimized resource management.'
+        ],
+        techStack: ['React', 'TypeScript', 'Material UI', 'Pintura', 'Git', 'GitHub', 'WebGL', 'FastAPI', 'PostgreSQL'],
+    },
+    {
+        title: 'Software Engineer Intern | Hybrid',
+        from: 'April 2025',
+        to: 'March 2026',
+        type: 'Internship',
+        projectLink: 'https://studio.wizcommerce.com',
+        description: [
+            'Contributed to building the WizStudio frontend from scratch, using React.js, TypeScript, WebGL and Material UI with contributions to backend API development using FastAPI, PostgreSQL.',
+            'Developed advanced WebGL-powered image editors, and a multiple multi-layer canvas editor.',
+            'Integrated multi-parameter filtering (date range, category, tags) into existing WizStudio APIs using FastAPI and PostgreSQL, improving search efficiency.',
+            'Collaborated with backend and design teams to ship features end-to-end.',
+            'Improved website performance through modular, scalable component architecture and coordinated multi-API data flows, delivering 20%+ smoother interactions and highly responsive user experiences.',
+        ],
+        techStack: ['React', 'TypeScript', 'Material UI', 'Pintura', 'Git', 'GitHub'],
+    }
 ];
 
 export const freelance_roles = [{
