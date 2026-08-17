@@ -2,7 +2,7 @@ import Counter from "animated-motion-counter";
 import FeedbackForm from "feedback-animated-box";
 import { useState } from "react";
 
-export const ScreensOptions: string[] = ['portfolio', 'components', 'designs', 'blockchain'];
+export const ScreensOptions: string[] = ['portfolio', 'components', 'designs', 'blockchain', 'contact'];
 
 const FeedbackFormBox = () => {
     const [renderFeedbackForm, setRenderFeedbackForm] = useState(false);

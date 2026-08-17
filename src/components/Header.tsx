@@ -2,14 +2,41 @@ import BorderWrapper from "./BorderWrapper";
 import SmMenu from "./SmMenu.tsx";
 import { useRef, useState } from "react";
 import MenuIcon from "./MenuIcon.tsx";
-import { includes, map } from "lodash";
+import { map } from "lodash";
 import { ScreensOptions } from "./utils.tsx";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Header = () => {
     const navigate = useNavigate();
+    const location = useLocation();
     const [menuOpen, setMenuOpen] = useState(false);
     const triggerClose = useRef<any>(null);
+
+    const handleNavClick = (opt: string) => {
+        if (opt === 'contact') {
+            if (location.pathname === '/' || location.pathname === '/portfolio') {
+                const el = document.getElementById('contact');
+                if (el) {
+                    el.scrollIntoView({ behavior: 'smooth' });
+                    window.history.pushState(null, '', '#contact');
+                }
+            } else {
+                navigate('/portfolio#contact');
+            }
+        } else {
+            navigate(`/${opt}`);
+        }
+    };
+
+    const isOptionActive = (opt: string) => {
+        if (opt === 'contact') {
+            return location.hash === '#contact';
+        }
+        if (opt === 'portfolio') {
+            return (location.pathname === '/' || location.pathname === '/portfolio') && location.hash !== '#contact';
+        }
+        return location.pathname.toLowerCase().includes(opt.toLowerCase());
+    };
 
     const renderSmallDisplayMenu = () => {
         return (
@@ -30,15 +57,12 @@ const Header = () => {
             {
                 map(ScreensOptions, (opt: string) => (
                     <div
+                        key={opt}
                         style={{
-                            ...(
-                                ((location.pathname === '/' && opt === 'portfolio')
-                                    || includes(location.pathname, opt.toLowerCase()))
-                                && { color: 'black' }
-                            ),
+                            ...(isOptionActive(opt) && { color: 'black' }),
                         }}
-                        onClick={() => navigate(`/${opt}`)}
-                        className="text-neutral-400 max-md:hidden cursor-pointer first-letter:uppercase" >
+                        onClick={() => handleNavClick(opt)}
+                        className="text-neutral-400 max-md:hidden cursor-pointer first-letter:uppercase hover:text-neutral-700 transition-colors" >
                         {opt}
                     </div>
                 ))
