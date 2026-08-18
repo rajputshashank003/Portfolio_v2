@@ -308,7 +308,7 @@ const Contact = () => {
                             />
                         </div>
 
-                        {/* Message Textarea */}
+                        {/* Message Textarea  */}
                         <div className="flex flex-col gap-1.5">
                             <div className="flex justify-between items-center">
                                 <label
