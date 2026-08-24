@@ -34,10 +34,10 @@ const About = () => {
 
                         <li>
                             Solved over{" "}
-                            <span className="font-semibold">600+ Data Structures & Algorithms problems</span>{" "}
-                            on platform {" "}
+                            <span className="font-semibold">750+ Data Structures & Algorithms problems</span>{" "}
+                            on platform{" "}
                             <HoverChip label='leetcode.com/rajputshashank'><span onClick={() => window.open('https://leetcode.com/rajputshashank', '_blank')} className="font-semibold cursor-pointer">LeetCode</span></HoverChip>, achieving a{" "}
-                            <span className="font-semibold">1550+ contest rating</span> and
+                            <span className="font-semibold">1650+ contest rating (Top 16%)</span> and
                             continuously improving problem-solving and algorithmic thinking.
                         </li>
                     </ul>
