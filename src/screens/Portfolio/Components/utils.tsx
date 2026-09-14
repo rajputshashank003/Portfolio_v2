@@ -62,6 +62,7 @@ export const wizcommerce_roles = [
 ];
 
 export const freelance_roles = [
+/*
     {
         title: 'NGO Management System',
         from: 'Aug 2026',
@@ -86,6 +87,7 @@ export const freelance_roles = [
             </div>
         )
     },
+*/
     {
         title: 'Bharapups',
         from: 'July 2025',
