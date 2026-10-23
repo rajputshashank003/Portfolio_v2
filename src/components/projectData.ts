@@ -6,6 +6,7 @@ export const fullstack = [
         description: [
             "Inspired by Razorpay's 'Fix My Itch' initiative ('How can companies eliminate unused SaaS subscriptions efficiently?'), solving the critical industry problem of wasteful software spend, inactive user seats, and lack of centralized visibility.",
             "Architected a multi-tenant SaaS subscription and seat optimization platform with Go (Gin, GORM v2) and React (Vite, Tailwind CSS v4, React Router v7).",
+            "Integrated Razorpay payment gateway for CostOp Pro subscriptions, implementing secure checkout flows, webhook signature verification, and automated workspace tier upgrades.",
             "Designed a robust PostgreSQL (Neon DB) schema isolating workspaces by org_id, separating access policy (subscription_teams) from seat materialization (subscription_assignments).",
             "Prevented concurrent seat over-allocations using transaction-level pessimistic locking (SELECT FOR UPDATE) to guarantee atomic database updates.",
             "Eliminated N+1 query overhead in GORM through in-memory batch mapping and bulk SQL queries, achieving O(1) query complexity for complex dashboard loads.",
@@ -15,7 +16,7 @@ export const fullstack = [
         small_description: "A SaaS subscription and seat optimization platform that prevents license waste, manages team seat allocations, and predicts multi-month run-rates.",
         duration: "Jan 2026 - Present",
         roles: 'Lead FullStack developer',
-        techStack: ['React', 'Go (Golang)', 'Gin', 'GORM', 'PostgreSQL', 'Neon DB', 'Docker', 'Tailwind CSS v4', 'Framer Motion', 'TypeScript'],
+        techStack: ['React', 'Go (Golang)', 'Gin', 'GORM', 'PostgreSQL', 'Neon DB', 'Docker', 'Tailwind CSS v4', 'Framer Motion', 'TypeScript', 'Razorpay'],
     },
     {
         img: "https://res.cloudinary.com/db8sjqkbg/image/upload/v1766167743/AIKSAVA_nlrlvm.png",
